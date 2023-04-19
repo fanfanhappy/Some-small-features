@@ -3,6 +3,7 @@ package com.fcg.EmployeeMangeSystem.Service;
 import com.fcg.EmployeeMangeSystem.domin.Employee;
 
 import java.util.HashMap;
+import java.util.Set;
 
 /**
  * @author 好女人蕾赛
@@ -11,16 +12,18 @@ import java.util.HashMap;
 public class EmployeeService {
     HashMap<String , Employee> hashMap = new HashMap<>();
 
-    //增加员工
-    public void EmployeeInsert(Employee e)
+    //定义add方法 将员工加入Map
+    public boolean add(String key , Employee e)
     {
-        hashMap.put(e.getId() , e);
+       hashMap.put(key , e);
+       return true;
     }
 
-    //删除员工  id删除
-    public void EmployeeDelect(String id)
+    //得到Map中的key
+    public HashMap List()
     {
-        hashMap.remove(id);
+        return hashMap;
     }
+
 
 }

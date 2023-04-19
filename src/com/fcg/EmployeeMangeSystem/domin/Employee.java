@@ -9,6 +9,9 @@ public class Employee {
     private String id;
     private double sal;
 
+    public Employee() {
+    }
+
     public Employee(String name, String id, double sal) {
         this.name = name;
         this.id = id;
@@ -42,6 +45,13 @@ public class Employee {
     public void show()
     {
         System.out.println(name + "\t" + "员工号：" + id + "\t" + "工资：" + sal);
+    }
+
+    @Override
+    public String toString() {
+        return "name='" + name + '\'' +
+                ", id='" + id + '\'' +
+                ", sal=" + sal;
     }
 }
 
