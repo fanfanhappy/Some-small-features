@@ -25,5 +25,18 @@ public class EmployeeService {
         return hashMap;
     }
 
+    //接收id删除员工
+    public boolean Delext(String id)
+    {
+        hashMap.remove(id);
+        return true;
+    }
+
+    //接收id，得到员工对象
+    public Employee getEmployee(String id)
+    {
+       return  hashMap.get(id);
+    }
+
 
 }
