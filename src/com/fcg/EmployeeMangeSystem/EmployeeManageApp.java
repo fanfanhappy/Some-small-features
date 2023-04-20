@@ -10,5 +10,6 @@ public class EmployeeManageApp {
     public static void main(String[] args) {
         EmployeeManageView employeeManageView = new EmployeeManageView();
         employeeManageView.mainMue();
+        //
     }
 }
